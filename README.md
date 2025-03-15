@@ -29,7 +29,7 @@
 ### Запуск диалога
 Чтобы запустить диалог, вызовите метод `StartDialogue()`:
 ```csharp
-FindObjectOfType<DialogManager>().StartDialogue();
+StartDialogue();
 ```
 
 ### Настройка диалогов
@@ -41,12 +41,11 @@ FindObjectOfType<DialogManager>().StartDialogue();
 - `choices` — список вариантов выбора (`DialogueChoice`).
 
 Пример добавления диалога есть в сцене репозитория.
-```
 
 ### Переход к следующему шагу
 Для перехода к следующему шагу вызывайте метод `OnNextLine()` (например, при клике):
 ```csharp
-FindObjectOfType<DialogManager>().OnNextLine();
+OnNextLine();
 ```
 
 ## Требования
